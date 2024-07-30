@@ -1,0 +1,2 @@
+# 06_Plz_Take_care_of_My_Refrigerator
+Mini Project : Plz_Take_care_of_My_Refrigerator
