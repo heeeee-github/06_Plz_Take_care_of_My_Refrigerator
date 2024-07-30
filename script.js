@@ -238,13 +238,13 @@ const sendRecipeToOpenAI = async (ingredients) => {
         {
             role: "user",
             content: `주재료: ${ingredients.main.join(', ')}, 야채: ${ingredients.vegi.join(', ')}, 기본 재료: ${ingredients.basic.join(', ')}, 냉장고 재료: ${ingredients.fridge.join(', ')}, 냉동실 재료: ${ingredients.freezer.join(', ')}. 없는 재료를 추가하여 요리를 해야하는 경우 "구매가 필요한 재료"를 명시해줘. 답변은  
-<h2>추천 레시피 [번호] : [음식 레시피 명]</h2>
-<h3>재료</h3>
+<h3>추천 레시피 [번호] : [음식 레시피 명]</h3>
+<h4>재료</h4>
 <p>보유 중인 재료 : </p>
 <p>구매가 필요한 재료 : </p>
 <p>추가하면 풍미가 더해지는 재료 : </p>
 <p>양념 재료 : </p>
-<h3>제조</h3>
+<h4>제조</h4>
 <p>양념 제조: </p>
 <p>조리 순서 : </p>
 로 알려줘.
@@ -289,7 +289,7 @@ let isFridgeOpen = false;
 
 fridgeDoor.addEventListener('click', () => {
     isFridgeOpen = !isFridgeOpen;
-    fridgeDoor.style.transform = isFridgeOpen ? 'translateX(-85%)' : 'translateX(0)';
+    fridgeDoor.style.transform = isFridgeOpen ? 'translateX(-95%)' : 'translateX(0)';
 });
 
 // 재료 아이콘 생성 및 애니메이션

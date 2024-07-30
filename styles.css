@@ -1,5 +1,6 @@
+/* Variables */
 :root {
-    --main-bg-color: #eafdfb; /* #e3f5fa  #e6f3ff */
+    --main-bg-color: #eafdfb;
     --container-bg-color: #ffffff;
     --main-font: 'Noto Sans KR', sans-serif;
     --main-color: #2c3e50;
@@ -14,32 +15,34 @@
     --tab-button-active-bg: #3498db;
 }
 
+/* Global Styles */
 body {
     font-family: var(--main-font);
     background-color: var(--main-bg-color);
     margin: 0;
-    padding: 20px;
-    transition: background-color 0.5s ease;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    transition: background-color 0.5s ease;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     background-color: var(--container-bg-color);
-    padding: 20px ;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
 }
 
+/* Typography */
 h1 {
     text-align: center;
     color: var(--main-color);
@@ -47,11 +50,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Tabs */
 .tabs {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     width: 100%;
 }
 
@@ -61,10 +64,10 @@ h1 {
     background-color: var(--tab-button-bg);
     border: none;
     outline: none;
-    transition: background-color 0.3s;
     font-size: 1em;
     border-radius: 5px;
     margin: 0 5px;
+    transition: background-color 0.3s;
 }
 
 .tab-button:hover {
@@ -79,18 +82,16 @@ h1 {
 .tab-content {
     display: none;
     animation: fadeIn 0.5s;
-    padding : 0 0 0 140px ;
-    width: 80%;
-    height: 80vh;
+    padding: 0 20px 0 0;
+    width: 90%;
+    height: 80%;
+    float: right; 
+    overflow-y: auto;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
+/* Ingredients */
 .ingredient-category {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 10px;
@@ -117,7 +118,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
-    /* margin-bottom: 5px; */
 }
 
 .ingredient-item:hover {
@@ -131,20 +131,21 @@ h1 {
     padding: 2px 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
     margin-left: 10px;
+    transition: background-color 0.3s;
 }
 
 .ingredient-item button:hover {
     background-color: #c0392b;
 }
 
+/* Recipe Generation */
 #generate-recipe {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 8px;
     font-size: 1.1em;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: var(--generate-recipe-bg-color);
     color: white;
     border: none;
@@ -158,24 +159,25 @@ h1 {
 }
 
 #recipe-result {
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 20px;
-    background-color: #f8f9fa ;
+    background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-height: 42vh; /* 최대 높이 설정 */
-    overflow-y: auto; /* 수직 방향으로 스크롤 활성화 */
+    max-height: 42vh;
+    overflow-y: auto;
 }
 
+/* Fridge */
 .fridge-container {
     position: relative;
-    width: 100%;
-    height: 80vh; /* 냉장고 문 높이 조정 */
+    width: 95%;
+    height: 80vh;
     background-color: #e3f5fa;
     border-radius: 15px;
     overflow: hidden;
     transition: width 0.5s ease;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .fridge-door {
@@ -191,18 +193,18 @@ h1 {
     align-items: center;
     font-size: 1.5em;
     color: #333;
+    cursor: pointer;
     transition: transform 0.5s ease;
     transform: translateX(0);
-    cursor: pointer;
 }
 
 .fridge-handle {
     position: absolute;
-    right: 10px; /* 핸들 위치 조정 */
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px; /* 핸들 크기 조정 */
-    height: 70px; /* 핸들 크기 조정 */
+    width: 15px;
+    height: 70px;
     background-color: #333;
     border-radius: 5px;
 }
@@ -214,23 +216,57 @@ h1 {
 }
 
 .content.shift {
-    margin-left: 160px; /* 냉장고 문 너비에 맞게 조정 */
+    margin-left: 160px;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* background ingredient-icon */
 .ingredient-icon {
     position: absolute;
-    font-size: 24px;
+    font-size: 30px;
     opacity: 0;
     transition: all 0.5s ease;
     z-index: -1; /* 아이콘을 컨테이너 뒤로 보이게 하는 z-index 설정 */
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+/* Loading Indicator */
+#recipe-result.loading::before {
+    content: "답변 중";
+    display: block;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
 }
 
+#recipe-result.loading::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #333;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive Design */
 @media (max-width: 600px) {
     body {
         padding: 10px;
@@ -261,62 +297,7 @@ h1 {
         font-size: 1em;
     }
 
-    .fridge-door {
-        font-size: 1.2em;
-        width: 120px; /* 모바일에서 냉장고 문 너비 조정 */
-    }
-
     .content.shift {
-        margin-left: 130px; /* 모바일에서 조정 */
+        margin-left: 130px;
     }
-}
-/* 
-.loading-indicator {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.loading-indicator img {
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
-    animation: float 2s infinite;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-} */
-/* "답변 중" 애니메이션 스타일 */
-#recipe-result.loading::before {
-    content: "답변 중";
-    display: block;
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-}
-
-#recipe-result.loading::after {
-    content: "";
-    display: block;
-    margin: 10px auto;
-    width: 30px;
-    height: 30px;
-    border: 4px solid #333;
-    border-radius: 50%;
-    border-top-color: transparent;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
