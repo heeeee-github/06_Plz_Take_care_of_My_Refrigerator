@@ -27,7 +27,7 @@
 
 
 
-## 배포한 서비스 링크
+## 배포 서비스
 [🥩 냉장고를 부탁해 🐟](https://heeeee-github.github.io/06_Plz_Take_care_of_My_Refrigerator/)
 
 
@@ -70,5 +70,5 @@
 
 
 ## 추가 개발(예정)
-- 사용자별 로그인 및 데이터 수집(DB연동)
+- 사용자별 회원가입/로그인 및 데이터 수집(DB연동)
 - 앱배포(IOS/Android)
