@@ -33,8 +33,14 @@
 
 
 ## 시연 영상
+- (시연1) 서비스 사용
 
+![(시연1) 재료 입력 및 레시피 제공](https://github.com/user-attachments/assets/91d46a63-bf17-4640-afdc-b1290ed04f35)
+  
 
+- (시연2) 재접속 후 남아있는 데이터 확인
+
+![시연2_재접속_시_데이터_유지](https://github.com/user-attachments/assets/ed9e407f-ffd7-4be3-bd77-40e742fcbaa2)
 
 ## 사용 기술
 ### HTML
