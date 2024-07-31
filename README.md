@@ -1,32 +1,39 @@
 # 06_Plz_Take_care_of_My_Refrigerator
 
-## 프로젝트 목표
-- 주재료와 보유 중인 재료를 활용할 수 있는 음식을 추천하고 조리할 수 있는 레시피를 알려주는 서비스 개발
+## 프로젝트 개요
+- **(목표)** 주재료와 보유 중인 재료를 활용할 수 있는 음식을 추천하고 조리할 수 있는 레시피를 알려주는 서비스 개발 및 배포
     - 생성AI API를 활용한 레시피 제공 서비스 개발
-- 개발된 내용에 대해 문서화 및 배포
 
-## 프로젝트 범위 정의
-- 
-- 프롬프트 작성
-    00 반영한 프롬프트를 설계하는 단계입니다. 
+- **(기간)** 2024.07.29.(월) ~ 2024.08.02.(금)
+
+- **(역할)** 기획/디자인/개발/배포(1인 프로젝트)
+
+
 
 ## WBS(Work Breakdown Structure)
 ### 프로젝트 전체
+![WBS](image-2.png)
+[Link URL](https://github.com/users/heeeee-github/projects/6)
 
 ### 테스트 목록
 ![Test List](image-1.png)
 
-## Wire Frame(with Figma)
+
+
+## Wire Frame
 ![Wire Frame](image.png)
 
 [Link URL](https://www.figma.com/design/Cdv0GO8PKspUcRK69ptrdf/%EB%83%89%EC%9E%A5%EA%B3%A0%EB%A5%BC-%EB%B6%80%ED%83%81%ED%95%B4?node-id=0-1&t=60SudV9UQd35Kd7l-1)
 
 
-##
-[URL](https://heeeee-github.github.io/06_Plz_Take_care_of_My_Refrigerator/)
+
+## 배포한 서비스 링크
+[🥩 냉장고를 부탁해 🐟](https://heeeee-github.github.io/06_Plz_Take_care_of_My_Refrigerator/)
+
 
 
 ## 시연 영상
+
 
 
 ## 사용 기술
@@ -59,3 +66,9 @@
 - 로컬 스토리지에 저장된 데이터 로드 및 생성AI 호출
 - 생성AI 응답 시간 동안 "답변 중"으로 메세지(로딩 표시 요소/아이콘) 표시
 - 생성AI 응답 가져오기
+
+
+
+## 추가 개발(예정)
+- 사용자별 로그인 및 데이터 수집(DB연동)
+- 앱배포(IOS/Android)
