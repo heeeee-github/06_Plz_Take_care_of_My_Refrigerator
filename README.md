@@ -12,16 +12,16 @@
 
 ## WBS(Work Breakdown Structure)
 ### 프로젝트 전체
-![WBS](image-2.png)
+![WBS](wbs_project.png)
 [Link URL](https://github.com/users/heeeee-github/projects/6)
 
 ### 테스트 목록
-![Test List](image-1.png)
+![Test List](wbs_test.png)
 
 
 
 ## Wire Frame
-![Wire Frame](image.png)
+![Wire Frame](wireframe.png)
 
 [Link URL](https://www.figma.com/design/Cdv0GO8PKspUcRK69ptrdf/%EB%83%89%EC%9E%A5%EA%B3%A0%EB%A5%BC-%EB%B6%80%ED%83%81%ED%95%B4?node-id=0-1&t=60SudV9UQd35Kd7l-1)
 
