@@ -66,14 +66,29 @@
 
 
 ## 시연 영상
-- (시연1) 서비스 사용
-
-![(시연1) 재료 입력 및 레시피 제공](https://github.com/user-attachments/assets/91d46a63-bf17-4640-afdc-b1290ed04f35)
+- (시연 1) 재료 입력
+![01_재료입력](https://github.com/user-attachments/assets/b8c4b919-c2b1-4267-830e-5b9f764e5d04)
   
 
-- (시연2) 재접속 후 남아있는 데이터 확인
+- (시연 2) 재료중복 확인
+![02_재료중복 확인](https://github.com/user-attachments/assets/62c51542-76f2-46db-8e80-fb84081d09a8)
 
-![시연2_재접속_시_데이터_유지](https://github.com/user-attachments/assets/ed9e407f-ffd7-4be3-bd77-40e742fcbaa2)
+
+- (시연 3) 주재료 구매 필요 여부
+![03_주재료 확인](https://github.com/user-attachments/assets/58156e1c-e9b8-4df2-962b-c612a97891c0)
+
+
+- (시연 4) 답변 중 애니메이션
+![04_답변 중 애니메이션](https://github.com/user-attachments/assets/ff8062f3-3aed-4735-a084-7170f3091bc6)
+
+
+- (시연 5) 레시피 생성 결과
+![05_레시피 생성 결과](https://github.com/user-attachments/assets/62856224-13f1-4402-9f3c-1a776b27e2a5)
+
+
+- (시연6) 입력데이터 유지 여부 확인
+![06_데이터_유지](https://github.com/user-attachments/assets/ed9e407f-ffd7-4be3-bd77-40e742fcbaa2)
+
 
 
 ## 개선사항
